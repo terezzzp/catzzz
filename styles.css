@@ -86,20 +86,22 @@ body {
   position: relative;
 }
 
-.butterfly {
-  display: inline-block;
-  font-size: 2.6rem;
+.butterfly-image {
+  width: 72px;
+  height: auto;
+  display: block;
+  object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(99, 145, 255, 0.35));
-  animation: butterfly-fly 3s ease-in-out infinite;
+  animation: butterfly-fly 3.2s ease-in-out infinite;
 }
 
 @keyframes butterfly-fly {
   0%,
   100% {
-    transform: translateY(0) rotate(-4deg) scale(1);
+    transform: translateY(0) rotate(-3deg) scale(1);
   }
   50% {
-    transform: translateY(-8px) rotate(5deg) scale(1.05);
+    transform: translateY(-8px) rotate(4deg) scale(1.04);
   }
 }
 
